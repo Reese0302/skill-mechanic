@@ -41,7 +41,7 @@
   },
   {
     "id": 9,
-    "prompt": "排查一下 C:\\Users\\lenovo\\.claude\\skills\\deliberate",
+    "prompt": "排查一下 ~/.claude/skills/deliberate",
     "expected": "识别为绝对路径，直接用该路径定位目标 skill"
   },
   {

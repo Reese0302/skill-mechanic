@@ -17,7 +17,7 @@ triggers:
 本 skill 用于检查并优化其他 skill 的 SKILL.md 文件。
 输入：skill 目录路径（默认当前目录）
 输出：三段式报告（已自动修复 / 需要你决策的 / 建议补充的）
-依赖：被检查 skill 必须有 SKILL.md；大型 skill 需先加载 MISTAKES.md；依赖 @skill-md-lint（机械层脚本，不可用时退化为全量排查）
+依赖：被检查 skill 必须有 SKILL.md；大型 skill 需先加载 MISTAKES.md；依赖 resources/skill-md-lint/（机械层脚本，不可用时退化为全量排查）
 失败：SKILL.md 不存在 → 报告错误并停止；误报/漏报 → 记录到 MISTAKES.md 并修正规则
 
 🛑 STOP：修改 SKILL.md 前，必须先展示修改方案并获得确认
@@ -112,9 +112,9 @@ triggers:
 
 读取 SKILL.md 全文。
 
-调用 @skill-md-lint：
+调用 resources/skill-md-lint：
 ```
-node skill-md-lint/lint.mjs {SKILL.md 路径}
+node resources/skill-md-lint/lint.mjs {SKILL.md 路径}
 ```
 
 if 脚本执行失败 → 退化为原有流程（主 agent 全量排查），报告标注「skill-md-lint 不可用」
