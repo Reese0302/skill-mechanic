@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "prompt": "帮我排查一下 deliberate 这个 skill",
+    "expected": "识别为小而美 skill（单文件），只排查 ABC 三个类别，生成三部分报告，不评分"
+  },
+  {
+    "id": 2,
+    "prompt": "帮我看看 nonfiction-director-cut 这个 skill 有没有问题",
+    "expected": "识别为大型 skill（多文件），排查全部 A-I 类别，生成三部分报告，含「建议补充的」部分"
+  },
+  {
+    "id": 3,
+    "prompt": "排查一下 not-exist-skill",
+    "expected": "报告「目标 skill 不存在：not-exist-skill」，终止排查，不生成完整报告"
+  },
+  {
+    "id": 4,
+    "prompt": "检查一下 /tmp/empty-skill-dir",
+    "expected": "报告「目录为空：/tmp/empty-skill-dir」，终止排查"
+  },
+  {
+    "id": 5,
+    "prompt": "排查一下这个 skill：/some/dir/with/broken-skill",
+    "expected": "SKILL.md 格式异常时，尝试解析可解析部分，报告标注格式异常，排查结果可能不完整"
+  },
+  {
+    "id": 6,
+    "prompt": "帮我看看 dbs-action 这个 skill",
+    "expected": "识别为大型 skill，发现对其他 dbs-* skill 的引用并在 D 类别中报告跨 skill 依赖情况"
+  },
+  {
+    "id": 7,
+    "prompt": "排查一下 memory-store 这个 skill",
+    "expected": "识别为大型 skill，发现可能的复杂度与问题规模不匹配（F 类别）或架构问题（G 类别），在「需要你决策的」部分给出建议"
+  },
+  {
+    "id": 8,
+    "prompt": "排查",
+    "expected": "未指定目标，列出 .claude/skills/ 下所有 skill 目录让用户选择"
+  },
+  {
+    "id": 9,
+    "prompt": "排查一下 C:\\Users\\lenovo\\.claude\\skills\\deliberate",
+    "expected": "识别为绝对路径，直接用该路径定位目标 skill"
+  },
+  {
+    "id": 10,
+    "prompt": "排查一下 grill-me 这个 skill",
+    "expected": "排查后执行 grilling 步骤，报告只含 surviving findings，击杀条目（如有）写入目标 skill 目录下的 griller-log.md"
+  },
+  {
+    "id": 11,
+    "prompt": "排查一下 dbs 这个 skill",
+    "expected": "大型 skill 排查，如果 griller-log.md 累积击杀 ≥ 10 或任一类别 ≥ 3，在报告末尾触发归纳分析提醒"
+  }
+]
