@@ -8,7 +8,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](CHANGELOG.md) [![Skills](https://img.shields.io/badge/skills.sh-Compatible-green)](https://skills.sh)
 
-[快速开始](#快速开始) · [真实案例](#真实案例) · [它能/不能做什么](#limitations) · [工作原理](#工作原理) · [9 维度](#9-维度排查) · [高级特性](#高级特性) · [FAQ](#faq) · [English](README-en.md)
+[English](README-en.md) · [快速开始](#快速开始) · [真实案例](#真实案例) · [它能/不能做什么](#limitations) · [工作原理](#工作原理) · [9 维度](#9-维度排查) · [高级特性](#高级特性) · [FAQ](#faq)
 
 </div>
 
