@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.1.1 (2026-06-28)
+
+### 文档
+
+- README.md 设计原则新增「反例黑名单」
+- README-en.md 新增英文版 README，含 Design Principles / Why It's Different / Quick Start / How It Works / 9 Dimensions / Self-Iteration via MISTAKES.md 等章节
+
+---
+
 ## v0.1.0 (2026-06-26)
 
 首次发布。
